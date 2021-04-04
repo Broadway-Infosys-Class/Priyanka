@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>
+            Vanila JS Example
+        </title>
+      
+        <style>
+           .style-btn{
+               margin: 10px;
+           }
+        </style>
+        </head>
+        <body>
+            <h2 id="MyText">Welcome to JavaScript</h1>
+                <button id="myButton"  class= "style-btn" onclick="myLecture('i am param')">Click</button>
+                <button id="myNewButton" class= "style-btn" onclick="myLecture('i am message')">Click</button>
+        </body>
+        <script>
+            function myLecture(myValue){
+                // alert("this function is working")
+                // var a = 10;
+                // var b = 20;
+                // console.log("this is still working")
+                // console.table([a,b])
+
+                var text = document.getElementById("MyText");
+                if (text.innerHTML == "Welcome to JavaScript")
+                {
+                    text.innerHTML= myValue;
+                }else{
+                    text.innerHTML="Welcome to JavaScript";
+                }
+               
+            }
+        </script>
+    
+</html>
